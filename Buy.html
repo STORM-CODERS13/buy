@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon"  type="x-icon" href="minilogolast.jpeg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    <title>Stormcoders | Product | Buy</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+        }
+    .container{
+            min-height: 150vh;
+            background: url(BG.jfif) no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container form{
+            width: 700px;
+            height: 1000px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            flex-wrap: wrap;
+            margin-left: 20px;
+        }
+        .container form h1{
+            color: plum;
+            font-weight: 500;
+            margin-top: 20px;
+            width: 500px;
+            text-align: center;
+        }
+        .container form input{
+            width: 290px;
+            height: 40px;
+            padding-left: 10px;
+            outline: none;
+            border: none;
+            font-size: 15px;
+            margin-bottom: 10px;
+            background: none;
+            border-bottom: 2px solid white;
+            color: violet;
+
+        }
+        .container form input::placeholder{
+            color: pink;
+        }
+        #c1,#c3{
+            margin-left: 20px;
+        }
+        #c2,#c3{
+            margin-top: 10px;
+        }
+        .container form h4{
+            color:pink;
+            font-weight: 300;
+            width: 600px;
+            margin-top: 20px;
+        }
+        .container textarea{
+            background: none;
+            border: none;
+            border-bottom: 2px solid #fff;
+            color: #fff;
+            font-weight: 200;
+            font-size: 15px;
+            padding: 10px;
+            outline: none;
+            min-width: 600px;
+            max-width: 600px;
+            min-height: 80px;
+            max-height: 80px;
+        }
+        textarea::-webkit-scrollbar{
+            width: 1em;
+        }
+        textarea::-webkit-scrollbar-thumb{
+            background-color: pink;
+        }
+        .container form #button{
+            border: none;
+            background: pink;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: 600;
+            font-size: 18px;
+            color:#6d008f ;
+            width: 90px;
+            padding: 0;
+            margin-right: 500px;
+            margin-bottom: 30px;
+            transition: 0.3s;
+        }
+        .container form #button:hover{
+            transform: scale(1.1);
+            cursor: pointer ;
+        }
+  
+        h3{
+            color: #4b0062;
+            margin-top: 50px;
+            margin-bottom: 10px;
+
+        }
+        .s{
+            flex-direction: column;
+            display: flex;
+            padding: 5px 58px;
+            text-align: center;
+            margin-right: 2cm;
+        }
+        #lastname{
+            margin-left: 20px;
+        }
+        #email{
+            margin-right: 3.5cm;
+        }
+        .select-box{
+            color: #100d28;
+            background: linear-gradient(125deg, #ffa2ae,#fed1c7);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <form  action="https://formsubmit.co/stormcoders13@gmail.com" method="POST">
+
+            <!--Honey pot-->
+            <input type="text" name="_honey" style="display: none;">
+
+            <!-- Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <input type="hidden" name="_next" value="#">
+
+            <h1>Contact us</h1>
+            <input type="text" id="firstname" name="First&nbsp;Name" placeholder="First Name" required>
+            <input type="text" id="lastname" name="Last&nbsp;Name" placeholder="Last Name" required>
+            <input type="email" id="email" name="E-mail" placeholder="E-mail" required>
+
+           <div class="s">  
+            <h3>Choose Category</h3>
+                <select class="select-box" id="c1">
+                    <label for="s1"></label>
+                    <option class="s1" value="">--</option>
+                    <option value="Domain">DOMAIN</option>
+                    <option value="Website">WEBSITE</option>
+                    <option value="Accsesory">ACCSESORIES</option>
+                </select>
+
+
+                <h3>Product ID</h3>
+                <select class="select-box" id="c2">
+                    <option class="s2" value="">--</option>
+                    <option value="id-01">ID-01</option>
+                    <option value="id-02">ID-02</option>
+                    <option value="id-03">ID-03</option>
+                </select>
+
+                <h3>Quantitiy</h3>
+                <select class="select-box" id="c3">
+                    <label for="s3">Quantitiy</label>
+                    <option class="s3" value="">--</option>
+                    <option value="01">1</option>
+                    <option value="02">2</option>
+                    <option value="03">3</option>
+                    <option value="04">4</option>
+                    <option value="05">5</option>
+                    <option value="06">6</option>
+                    <option value="07">7</option>
+                    <option value="08">8</option>
+                    <option value="09">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                </select>
+
+            </div>   
+            <h4>Write Your Comment...</h4>
+            <textarea required name="Comment" rows="3"></textarea>
+            <input type="submit" value="Submit" id="button">
+        </form>
+ 
+    </div>
+</body>
+</html>

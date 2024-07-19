@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: #100d28;
+}
+#main-container {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45%;
+    
+}
+.contain{
+    width: 450px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+    margin-top: 20%;
+    margin-left: 32.5%;
+}
+.select-body{
+    position: relative;
+    width: 170px;
+    height: 40px;
+    margin: 5px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.select-body select{
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    appearance: none;
+    padding: 0 30px 0 10px;
+    color: black;
+}
+.select-container label{
+    color: plum;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.select-icon{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+} 
+
+.select-icon i{
+    font-size: 20px;
+    color: #6d008f ;
+}
+
+option{
+    color:#6d008f;
+    font-weight: 500;
+}
+
+.main-container select{
+   border-radius: 5px;
+    background: linear-gradient(135deg, #F780C8,#E0218A);}
+#product-id{
+    margin-left: 10px ;
+}
+#button{
+    border: none;
+    background: linear-gradient(135deg, #F780C8,#E0218A);
+    border-radius: 5px;
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    color:#6d008f ;
+    width: 90px;
+    height: 25px;
+    padding: 0;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+    margin-left: 10px;
+}
+#button:hover{
+    transform: scale(1.1);
+    cursor: pointer ;
+}
+input{
+    width: 250px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background: none;
+    border-bottom: 2px solid white;
+    color: violet;
+    border-radius: 20px;
+
+}
+input ::placeholder{
+    color: #F780C8;
+    font-weight: bold;
+}
